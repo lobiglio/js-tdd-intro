@@ -1,16 +1,3 @@
-const assert = require('assert');
-
-assert.strictEqual(typeof capitalizeFirstLetters, 'function');
-
-assert.strictEqual(capitalizeFirstLetters.length, 1);
-
-assert.strictEqual(capitalizeFirstLetters('je vais en ville'), 'Je Vais En Ville');
-
-assert.strictEqual(capitalizeFirstLetters('b'), 'B');
-
-assert.strictEqual(capitalizeFirstLetters(''), '');
-
-
 function capitalizeFirstLetters(input) {
     if (input.length > 0) {
 
@@ -23,3 +10,5 @@ function capitalizeFirstLetters(input) {
         return '';
     }
 }
+
+module.exports = capitalizeFirstLetters;
